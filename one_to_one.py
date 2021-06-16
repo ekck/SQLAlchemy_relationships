@@ -9,7 +9,7 @@ db = SQLAlchemy(app)
 class Parent(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(500))
-    child = db.relationship('Child', backref='parent', uselist=False)
+    child = db.relationship('Child', backref='parent')
 
 class Child(db.Model):
     id = db.Column(db.Integer, primary_key=True)

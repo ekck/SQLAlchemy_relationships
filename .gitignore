@@ -6,3 +6,4 @@ env
 
 relationships.db
 121rel.db
+m2m.db
